@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_Incluir_estoque</class>
+ <widget class="QWidget" name="Form_Incluir_estoque">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1294</width>
+    <height>756</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastro Estoque</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/telainicial/telainicial/estoque.png</normaloff>:/telainicial/telainicial/estoque.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background-color: rgb(85, 170, 255,150);
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_3">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="sizeConstraint">
+    <enum>QLayout::SetMaximumSize</enum>
+   </property>
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>1200</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget_2{
+	
+	background-color: rgb(0, 0, 0,200);
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1200</width>
+          <height>800</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+text-transform: uppercase;
+border:1px solid blue;
+	background-color: rgb(231, 231, 231);
+}
+</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>1</number>
+         </property>
+         <property name="leftMargin">
+          <number>1</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>1</number>
+         </property>
+         <property name="bottomMargin">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="fr_TituloEsotuque">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QFrame#fr_TituloEsotuque{
+color:red;
+border: none;
+background-color:#2408D4;}
+
+QLabel{color: white;
+background-color:transparent;
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+
+}
+</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="lb_TituloEstoque">
+              <property name="font">
+               <font>
+                <family>MS Shell Dlg 2</family>
+                <pointsize>15</pointsize>
+                <weight>9</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:none</string>
+              </property>
+              <property name="text">
+               <string>cadastro estoque</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QTabWidget" name="tabWidget">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTabWidget::pane { /* The tab widget frame */
+    border-top: 2px solid #C2C7CB;
+}
+
+QTabWidget::tab-bar {
+    left: 5px; /* move to the right by 5px */
+}
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+    border: 2px solid #C4C4C3;
+    border-bottom-color: #C2C7CB; /* same as the pane color */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 8ex;
+    padding: 2px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+}
+
+QTabBar::tab:selected {
+    border-color: #9B9B9B;
+    border-bottom-color: #C2C7CB; /* same as pane color */
+}
+
+QTabBar::tab:!selected {
+    margin-top: 2px; /* make non-selected tabs look smaller */
+}
+QWidget{
+text-transform: uppercase;
+border:0px solid blue;
+background-color: rgb(231, 231, 231);
+}
+
+
+QLineEdit{
+	background: #FFF;
+boder:3px solid;
+}
+QLineEdit:focus{
+	background-color: rgb(226, 226, 226);
+}
+
+
+QLabel{
+
+text-transform: uppercase;
+font-size: 12px;
+font-family: &quot;Arial Unicode MS&quot;;
+font-weight: bold;
+color: black;
+	
+	background-color: transparent;
+}
+
+QDoubleSpinBox{
+	background: #FFF;
+font-size: 12px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+color: rgb(0, 0, 0);
+border:none;
+border-bottom-left-radius:0px;
+border-bottom-right-radius:0px;
+border-top-left-radius:0px;
+}
+</string>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="dadosproduto">
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <attribute name="title">
+                <string>dados produto</string>
+               </attribute>
+               <widget class="QLabel" name="label_16">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>30</y>
+                  <width>51</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>ID</string>
+                </property>
+               </widget>
+               <widget class="QCheckBox" name="ch_codiBarra">
+                <property name="geometry">
+                 <rect>
+                  <x>300</x>
+                  <y>30</y>
+                  <width>16</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::ClickFocus</enum>
+                </property>
+                <property name="toolTip">
+                 <string>gera codigo barra</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border:none;
+background-color: transparent;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_tipoDeUnidade">
+                <property name="geometry">
+                 <rect>
+                  <x>830</x>
+                  <y>70</y>
+                  <width>71</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>un</string>
+                </property>
+                <property name="maxLength">
+                 <number>2</number>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>unidade</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_3">
+                <property name="geometry">
+                 <rect>
+                  <x>770</x>
+                  <y>80</y>
+                  <width>61</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>unidade</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="TX_IDpRODUTO">
+                <property name="geometry">
+                 <rect>
+                  <x>50</x>
+                  <y>30</y>
+                  <width>101</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>id</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_Fornecedor">
+                <property name="geometry">
+                 <rect>
+                  <x>370</x>
+                  <y>120</y>
+                  <width>211</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>fornecedor</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_MarcaProduto">
+                <property name="geometry">
+                 <rect>
+                  <x>80</x>
+                  <y>120</y>
+                  <width>201</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>marca</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_DescricaoGrupo">
+                <property name="geometry">
+                 <rect>
+                  <x>690</x>
+                  <y>120</y>
+                  <width>191</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>grupo</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_codGrupo">
+                <property name="geometry">
+                 <rect>
+                  <x>600</x>
+                  <y>120</y>
+                  <width>91</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+	background-color: rgb(231, 231, 231);
+	color: rgb(0, 0, 0);
+	font: 9pt &quot;MS Shell Dlg 2&quot;;
+
+border:1px solid
+ }
+QLineEdit:hover{
+background-color: #40a286
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>codproduto</string>
+                </property>
+                <property name="cursorMoveStyle">
+                 <enum>Qt::VisualMoveStyle</enum>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_8">
+                <property name="geometry">
+                 <rect>
+                  <x>550</x>
+                  <y>240</y>
+                  <width>111</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>valor de venda</string>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="tx_valorVenda">
+                <property name="geometry">
+                 <rect>
+                  <x>660</x>
+                  <y>240</y>
+                  <width>131</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::StrongFocus</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="readOnly">
+                 <bool>false</bool>
+                </property>
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="showGroupSeparator" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="prefix">
+                 <string>R$ </string>
+                </property>
+                <property name="decimals">
+                 <number>3</number>
+                </property>
+                <property name="maximum">
+                 <double>999999.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>1.000000000000000</double>
+                </property>
+                <property name="stepType">
+                 <enum>QAbstractSpinBox::DefaultStepType</enum>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label">
+                <property name="geometry">
+                 <rect>
+                  <x>170</x>
+                  <y>30</y>
+                  <width>121</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>CODIGO BARRA</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_2">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>80</y>
+                  <width>111</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Descriçao*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_DescricaoProduto">
+                <property name="geometry">
+                 <rect>
+                  <x>100</x>
+                  <y>70</y>
+                  <width>661</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="placeholderText">
+                 <string>descriçao produto</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_codigoBarra">
+                <property name="geometry">
+                 <rect>
+                  <x>330</x>
+                  <y>30</y>
+                  <width>131</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="maxLength">
+                 <number>15</number>
+                </property>
+                <property name="placeholderText">
+                 <string>codigo barra</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_9">
+                <property name="geometry">
+                 <rect>
+                  <x>270</x>
+                  <y>200</y>
+                  <width>133</width>
+                  <height>18</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>preço compra</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="db_compra">
+                <property name="geometry">
+                 <rect>
+                  <x>410</x>
+                  <y>190</y>
+                  <width>133</width>
+                  <height>29</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::StrongFocus</enum>
+                </property>
+                <property name="wrapping">
+                 <bool>false</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="showGroupSeparator" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="prefix">
+                 <string>R$ </string>
+                </property>
+                <property name="maximum">
+                 <double>99999.000000000000000</double>
+                </property>
+                <property name="stepType">
+                 <enum>QAbstractSpinBox::DefaultStepType</enum>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_10">
+                <property name="geometry">
+                 <rect>
+                  <x>270</x>
+                  <y>230</y>
+                  <width>133</width>
+                  <height>18</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>preço custo</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="db_custo">
+                <property name="geometry">
+                 <rect>
+                  <x>410</x>
+                  <y>230</y>
+                  <width>133</width>
+                  <height>29</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::StrongFocus</enum>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="showGroupSeparator" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="prefix">
+                 <string>R$ </string>
+                </property>
+                <property name="maximum">
+                 <double>99999.000000000000000</double>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_11">
+                <property name="geometry">
+                 <rect>
+                  <x>270</x>
+                  <y>270</y>
+                  <width>121</width>
+                  <height>18</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>lucro(%)</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="db_lucro">
+                <property name="geometry">
+                 <rect>
+                  <x>410</x>
+                  <y>270</y>
+                  <width>133</width>
+                  <height>29</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="showGroupSeparator" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="prefix">
+                 <string>% </string>
+                </property>
+                <property name="maximum">
+                 <double>99999.000000000000000</double>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_6">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>200</y>
+                  <width>143</width>
+                  <height>14</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>quant produto</string>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="tx_QuantidadeProduto">
+                <property name="geometry">
+                 <rect>
+                  <x>110</x>
+                  <y>190</y>
+                  <width>143</width>
+                  <height>29</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::StrongFocus</enum>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="showGroupSeparator" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="maximum">
+                 <double>99999.000000000000000</double>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_13">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>240</y>
+                  <width>121</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>max produto</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_maximoproduto">
+                <property name="geometry">
+                 <rect>
+                  <x>110</x>
+                  <y>230</y>
+                  <width>143</width>
+                  <height>24</height>
+                 </rect>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_14">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>280</y>
+                  <width>143</width>
+                  <height>14</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>min produto</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_minimoProduto">
+                <property name="geometry">
+                 <rect>
+                  <x>110</x>
+                  <y>270</y>
+                  <width>143</width>
+                  <height>24</height>
+                 </rect>
+                </property>
+                <property name="maxLength">
+                 <number>10</number>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_codfornecedo">
+                <property name="geometry">
+                 <rect>
+                  <x>300</x>
+                  <y>120</y>
+                  <width>71</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+	background-color: rgb(231, 231, 231);
+	color: rgb(0, 0, 0);
+	font: 9pt &quot;MS Shell Dlg 2&quot;;
+
+border:1px solid
+ }
+QLineEdit:hover{
+background-color: #40a286
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>codfor</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_codmarca">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>120</y>
+                  <width>71</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLineEdit {
+	background-color: rgb(231, 231, 231);
+	color: rgb(0, 0, 0);
+	font: 9pt &quot;MS Shell Dlg 2&quot;;
+
+border:1px solid
+ }
+QLineEdit:hover{
+background-color: #40a286
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string>codmarc</string>
+                </property>
+               </widget>
+               <widget class="QGroupBox" name="groupBox">
+                <property name="geometry">
+                 <rect>
+                  <x>940</x>
+                  <y>210</y>
+                  <width>211</width>
+                  <height>281</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QGroupBox {
+
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}</string>
+                </property>
+                <property name="title">
+                 <string>paramentro</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <widget class="QCheckBox" name="cheativo">
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="text">
+                    <string>ativo</string>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="chefotos">
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="text">
+                    <string>fotos</string>
+                   </property>
+                   <property name="tristate">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="chetributos">
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="text">
+                    <string>tributos</string>
+                   </property>
+                   <property name="tristate">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QCheckBox" name="chehistorico">
+                   <property name="focusPolicy">
+                    <enum>Qt::ClickFocus</enum>
+                   </property>
+                   <property name="text">
+                    <string>historico</string>
+                   </property>
+                   <property name="tristate">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="verticalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QLabel" name="label_20">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>310</y>
+                  <width>121</width>
+                  <height>18</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>lucro real</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="db_lucroreal">
+                <property name="geometry">
+                 <rect>
+                  <x>410</x>
+                  <y>310</y>
+                  <width>133</width>
+                  <height>29</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="showGroupSeparator" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="prefix">
+                 <string>R$ </string>
+                </property>
+                <property name="maximum">
+                 <double>99999.000000000000000</double>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_21">
+                <property name="geometry">
+                 <rect>
+                  <x>550</x>
+                  <y>190</y>
+                  <width>111</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="text">
+                 <string>porc% venda</string>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="tx_porcentagemvenda">
+                <property name="geometry">
+                 <rect>
+                  <x>660</x>
+                  <y>190</y>
+                  <width>131</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>-1</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                  <stylestrategy>PreferAntialias</stylestrategy>
+                 </font>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::StrongFocus</enum>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="readOnly">
+                 <bool>false</bool>
+                </property>
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="showGroupSeparator" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="prefix">
+                 <string>R$ </string>
+                </property>
+                <property name="decimals">
+                 <number>3</number>
+                </property>
+                <property name="maximum">
+                 <double>999999.000000000000000</double>
+                </property>
+                <property name="singleStep">
+                 <double>1.000000000000000</double>
+                </property>
+                <property name="stepType">
+                 <enum>QAbstractSpinBox::DefaultStepType</enum>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_15">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>340</y>
+                  <width>81</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>NCM*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_ncm">
+                <property name="geometry">
+                 <rect>
+                  <x>110</x>
+                  <y>340</y>
+                  <width>143</width>
+                  <height>24</height>
+                 </rect>
+                </property>
+                <property name="maxLength">
+                 <number>8</number>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_fracaoPRoduto">
+                <property name="geometry">
+                 <rect>
+                  <x>110</x>
+                  <y>380</y>
+                  <width>143</width>
+                  <height>24</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::StrongFocus</enum>
+                </property>
+                <property name="text">
+                 <string>1</string>
+                </property>
+                <property name="maxLength">
+                 <number>2</number>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="placeholderText">
+                 <string/>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_7">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>380</y>
+                  <width>81</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>Fraçao</string>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="db_pisCusto">
+                <property name="geometry">
+                 <rect>
+                  <x>110</x>
+                  <y>420</y>
+                  <width>141</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::StrongFocus</enum>
+                </property>
+                <property name="wrapping">
+                 <bool>false</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="showGroupSeparator" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="prefix">
+                 <string/>
+                </property>
+                <property name="maximum">
+                 <double>99999.000000000000000</double>
+                </property>
+                <property name="stepType">
+                 <enum>QAbstractSpinBox::DefaultStepType</enum>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_12">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>430</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>calculo pis</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="lb_codigoBarra">
+                <property name="geometry">
+                 <rect>
+                  <x>950</x>
+                  <y>10</y>
+                  <width>181</width>
+                  <height>131</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(231, 231, 231);
+border:none;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <zorder>label</zorder>
+               <zorder>label_16</zorder>
+               <zorder>ch_codiBarra</zorder>
+               <zorder>tx_tipoDeUnidade</zorder>
+               <zorder>label_3</zorder>
+               <zorder>TX_IDpRODUTO</zorder>
+               <zorder>tx_Fornecedor</zorder>
+               <zorder>tx_MarcaProduto</zorder>
+               <zorder>tx_DescricaoGrupo</zorder>
+               <zorder>tx_codGrupo</zorder>
+               <zorder>label_8</zorder>
+               <zorder>tx_valorVenda</zorder>
+               <zorder>label_2</zorder>
+               <zorder>tx_DescricaoProduto</zorder>
+               <zorder>tx_codigoBarra</zorder>
+               <zorder>label_9</zorder>
+               <zorder>db_compra</zorder>
+               <zorder>label_10</zorder>
+               <zorder>db_custo</zorder>
+               <zorder>label_11</zorder>
+               <zorder>db_lucro</zorder>
+               <zorder>label_6</zorder>
+               <zorder>tx_QuantidadeProduto</zorder>
+               <zorder>label_13</zorder>
+               <zorder>tx_maximoproduto</zorder>
+               <zorder>label_14</zorder>
+               <zorder>tx_minimoProduto</zorder>
+               <zorder>tx_codfornecedo</zorder>
+               <zorder>tx_codmarca</zorder>
+               <zorder>groupBox</zorder>
+               <zorder>label_20</zorder>
+               <zorder>db_lucroreal</zorder>
+               <zorder>label_21</zorder>
+               <zorder>tx_porcentagemvenda</zorder>
+               <zorder>label_15</zorder>
+               <zorder>tx_ncm</zorder>
+               <zorder>tx_fracaoPRoduto</zorder>
+               <zorder>label_7</zorder>
+               <zorder>db_pisCusto</zorder>
+               <zorder>label_12</zorder>
+               <zorder>lb_codigoBarra</zorder>
+              </widget>
+              <widget class="QWidget" name="tributos">
+               <attribute name="title">
+                <string>TRIBUTOS</string>
+               </attribute>
+               <widget class="QLabel" name="label_17">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>90</y>
+                  <width>111</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>cfop saida</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_cfopSaida">
+                <property name="geometry">
+                 <rect>
+                  <x>110</x>
+                  <y>90</y>
+                  <width>101</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::StrongFocus</enum>
+                </property>
+                <property name="maxLength">
+                 <number>4</number>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_CstSaida">
+                <property name="geometry">
+                 <rect>
+                  <x>110</x>
+                  <y>120</y>
+                  <width>101</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::StrongFocus</enum>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="maxLength">
+                 <number>4</number>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="cb_classificacao">
+                <property name="geometry">
+                 <rect>
+                  <x>40</x>
+                  <y>30</y>
+                  <width>231</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <weight>50</weight>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(225, 225, 225);</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </item>
+               </widget>
+               <widget class="QLabel" name="label_18">
+                <property name="geometry">
+                 <rect>
+                  <x>40</x>
+                  <y>10</y>
+                  <width>211</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>*classificaçao fiscal</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_19">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>120</y>
+                  <width>101</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>cst saida</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_codst">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>30</y>
+                  <width>31</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="maxLength">
+                 <number>1</number>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="fotos">
+               <attribute name="title">
+                <string>fotos</string>
+               </attribute>
+               <widget class="QLabel" name="lb_fotos_estoque">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>10</y>
+                  <width>551</width>
+                  <height>411</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color:#538fff;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>:/newPrefix/img/profile.png</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="bt_selecionar_foto">
+                <property name="geometry">
+                 <rect>
+                  <x>40</x>
+                  <y>360</y>
+                  <width>41</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>35</width>
+                  <height>35</height>
+                 </size>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="contextMenuPolicy">
+                 <enum>Qt::NoContextMenu</enum>
+                </property>
+                <property name="toolTip">
+                 <string>Selecionar Foto</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{
+
+	color:#fff;
+	border:0px;
+	border-radius:20px;
+	font-size:20px;
+	cursor: pointer;
+background-color: #7AB32E;
+	margin:0px
+}
+QPushButton:hover{
+background-color:#3668ff;
+}
+
+
+</string>
+                </property>
+                <property name="text">
+                 <string>+</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>:/newPrefix/img/mais.png</normaloff>:/newPrefix/img/mais.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="HISTORICO">
+               <attribute name="title">
+                <string>HISTORICO</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QLabel" name="lb_FormProdutos_9">
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string>HISTÓRICO DE COMPRAS</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTableWidget" name="tb_HistoricoComprasProduto">
+                  <property name="styleSheet">
+                   <string notr="true">QTableView{
+background: #F1F1F1;
+color: black;
+font-weight: bold;
+font-size: 16px;
+border:1px solid;
+	selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(85, 170, 255);
+}
+QHeaderView:section{
+background: #FFF;
+
+font-size: 13px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+color: #797979;
+border:none;
+border-bottom: 2px solid black;
+border-top:2px solid black;
+padding:5px 0px;
+text-transform: uppercase
+}</string>
+                  </property>
+                  <property name="verticalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAsNeeded</enum>
+                  </property>
+                  <property name="horizontalScrollBarPolicy">
+                   <enum>Qt::ScrollBarAsNeeded</enum>
+                  </property>
+                  <property name="editTriggers">
+                   <set>QAbstractItemView::NoEditTriggers</set>
+                  </property>
+                  <property name="tabKeyNavigation">
+                   <bool>false</bool>
+                  </property>
+                  <property name="alternatingRowColors">
+                   <bool>true</bool>
+                  </property>
+                  <property name="selectionBehavior">
+                   <enum>QAbstractItemView::SelectRows</enum>
+                  </property>
+                  <property name="showGrid">
+                   <bool>false</bool>
+                  </property>
+                  <attribute name="horizontalHeaderDefaultSectionSize">
+                   <number>140</number>
+                  </attribute>
+                  <attribute name="verticalHeaderVisible">
+                   <bool>false</bool>
+                  </attribute>
+                  <attribute name="verticalHeaderHighlightSections">
+                   <bool>false</bool>
+                  </attribute>
+                  <column>
+                   <property name="text">
+                    <string>DATA</string>
+                   </property>
+                   <property name="textAlignment">
+                    <set>AlignLeading|AlignVCenter</set>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>QTDE</string>
+                   </property>
+                   <property name="textAlignment">
+                    <set>AlignLeading|AlignVCenter</set>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>VALOR</string>
+                   </property>
+                   <property name="textAlignment">
+                    <set>AlignLeading|AlignVCenter</set>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="lb_FormProdutos_8">
+                  <property name="styleSheet">
+                   <string notr="true">QLabel{
+font-size: 12px;
+font-family: &quot;Arial Unicode MS&quot;;
+font-weight: bold;
+color: #797979
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>OBSERVAÇÃO</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTextEdit" name="tx_ObsProduto">
+                  <property name="focusPolicy">
+                   <enum>Qt::ClickFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:0px;
+background: #CFCFCF;
+border-radius: 2px;
+color: #000;
+font: 13px &quot;Arial&quot; ;
+text-transform: uppercase;</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::WinPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Plain</enum>
+                  </property>
+                  <property name="documentTitle">
+                   <string>OBS</string>
+                  </property>
+                  <property name="lineWrapMode">
+                   <enum>QTextEdit::WidgetWidth</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="fr_BotoesFormProdutos">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border: none;</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="spacing">
+             <number>3</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="bt_Salvar">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+background-color: #7AB32E;
+color: #FFF;
+padding:15px 60px;
+ }
+QPushButton:hover{
+background-color: #40a286
+}</string>
+              </property>
+              <property name="text">
+               <string>SALVAR (F2)</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>75</width>
+                <height>35</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>F2</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="bt_clostela">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+background-color: #1E87F0;
+color: #FFF;
+padding:15px 60px;
+ }
+QPushButton:hover{
+background-color: #40a286
+}</string>
+              </property>
+              <property name="text">
+               <string>VOLTAR</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>75</width>
+                <height>35</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Esc</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>tx_codigoBarra</tabstop>
+  <tabstop>tx_DescricaoProduto</tabstop>
+  <tabstop>tx_tipoDeUnidade</tabstop>
+  <tabstop>tx_codmarca</tabstop>
+  <tabstop>tx_codfornecedo</tabstop>
+  <tabstop>tx_codGrupo</tabstop>
+  <tabstop>tx_QuantidadeProduto</tabstop>
+  <tabstop>tx_maximoproduto</tabstop>
+  <tabstop>tx_minimoProduto</tabstop>
+  <tabstop>db_compra</tabstop>
+  <tabstop>db_custo</tabstop>
+  <tabstop>tx_porcentagemvenda</tabstop>
+  <tabstop>tx_valorVenda</tabstop>
+  <tabstop>tx_cfopSaida</tabstop>
+  <tabstop>tx_CstSaida</tabstop>
+  <tabstop>tb_HistoricoComprasProduto</tabstop>
+  <tabstop>cb_classificacao</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormEntradaDenota</class>
+ <widget class="QWidget" name="FormEntradaDenota">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1240</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{text-transform: uppercase;
+
+}
+
+QLabel{
+font-size: 12px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+color: #277298;
+border: none;
+}
+
+QComboBox{
+border:1px solid;
+border-bottom-left-radius:0px;
+border-bottom-right-radius:0px;
+border-top-left-radius:0px;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_6">
+   <property name="leftMargin">
+    <number>6</number>
+   </property>
+   <property name="topMargin">
+    <number>6</number>
+   </property>
+   <property name="rightMargin">
+    <number>6</number>
+   </property>
+   <property name="bottomMargin">
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget{
+
+border:1px solid blue;
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="topMargin">
+       <number>1</number>
+      </property>
+      <property name="rightMargin">
+       <number>1</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="font">
+         <font>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame#frame_4{
+color:red;
+border: none;
+background-color:#2408D4;}
+
+QLabel{
+background:none;
+font-size: 16px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+	color: white;
+border: none;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>entrada de nota</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+background: #1E87F0;
+border: 1px solid #1E87F0;
+}
+QLabel{
+font-size: 16px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+color: white;
+border: none
+}
+QLineEdit{
+background: #CFCFCF;
+border-radius: 2px;
+color: #000;
+font-size: 16px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+text-transform: uppercase;
+
+}
+QLineEdit:Focus {
+border: 1px solid red;
+	background-color: rgb(255, 255, 255);r
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="tx_cnpj">
+         <property name="geometry">
+          <rect>
+           <x>800</x>
+           <y>30</y>
+           <width>221</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="maxLength">
+          <number>14</number>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tx_razaoSocial">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>30</y>
+           <width>441</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="placeholderText">
+          <string>razao social</string>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dt_dataCompra">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>151</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QDateEdit" name="dt_dataEntrada">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>30</y>
+           <width>151</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>10</y>
+           <width>121</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>razao social</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>800</x>
+           <y>10</y>
+           <width>121</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>cnpj</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tx_cfop">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>100</y>
+           <width>131</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="maxLength">
+          <number>4</number>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>cfop</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tx_numeSerie">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>100</y>
+           <width>81</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="maxLength">
+          <number>6</number>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>serie</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>131</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>data compra</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>170</x>
+           <y>10</y>
+           <width>131</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>data entrada</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>131</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>cfop entrada</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_7">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>80</y>
+           <width>141</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>numero nota</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tx_ChaveNota">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>100</y>
+           <width>521</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="maxLength">
+          <number>44</number>
+         </property>
+         <property name="placeholderText">
+          <string>chavenota</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tx_ModeloNota">
+         <property name="geometry">
+          <rect>
+           <x>980</x>
+           <y>100</y>
+           <width>81</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="maxLength">
+          <number>2</number>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>modelo</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>980</x>
+           <y>80</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>modelo</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tx_numeroNota">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>100</y>
+           <width>161</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="maxLength">
+          <number>6</number>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>numero nota</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_9">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>81</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>serie</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>80</y>
+           <width>241</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>chave acesso nota</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="itensnotafiscal">
+         <attribute name="title">
+          <string>itens nota fiscal</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QTableWidget" name="tab_EntradaNota">
+            <property name="contextMenuPolicy">
+             <enum>Qt::ActionsContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTableWidget {
+  background-color: white;
+	font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QTableWidget QHeaderView::section {
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+}
+
+
+</string>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="tabKeyNavigation">
+             <bool>false</bool>
+            </property>
+            <property name="showDropIndicator" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>150</number>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderDefaultSectionSize">
+             <number>48</number>
+            </attribute>
+            <attribute name="verticalHeaderHighlightSections">
+             <bool>true</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>id</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>codigo barra</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>nome</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>quantidade</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>valor custo</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>valor total</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>tipo_unidade</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>cfop_saida</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>cst_saida</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ncm</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_2">
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+background: #1E87F0;
+border: 1px solid #1E87F0;
+}
+QLabel{
+font-size: 16px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+color: white;
+border: none
+}
+QLineEdit{
+background: #CFCFCF;
+border-radius: 2px;
+color: #000;
+font-size: 16px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+text-transform: uppercase;
+
+}
+QLineEdit:Focus {
+border: 1px solid red;
+	background-color: rgb(255, 255, 255);r
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout"/>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="financeiro">
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+background: #1E87F0;
+
+}
+QLabel{
+font-size: 16px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+color: white;
+border: none
+}
+QLineEdit{
+background: #CFCFCF;
+border-radius: 2px;
+color: #000;
+font-size: 16px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+text-transform: uppercase;
+
+}
+QLineEdit:Focus {
+border: 1px solid red;
+	background-color: rgb(255, 255, 255);r
+}</string>
+         </property>
+         <attribute name="title">
+          <string>financeiro</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QFrame" name="frame_9">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>120</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QFrame" name="frame_6">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>100</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>100</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QDateEdit" name="dt_PArcelamento">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>30</y>
+                  <width>201</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">   QDateEdit {
+        border: 1px solid gray;
+        border-radius: 4px;
+        padding: 0 8px;
+        selection-background-color: darkgray;
+	
+	font: 16pt &quot;MS Shell Dlg 2&quot;;
+	background-color: rgb(255, 255, 255);
+    }
+</string>
+                </property>
+                <property name="calendarPopup">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_11">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>181</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>data vencimento</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_12">
+                <property name="geometry">
+                 <rect>
+                  <x>230</x>
+                  <y>10</y>
+                  <width>151</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>qte parcelas</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_13">
+                <property name="geometry">
+                 <rect>
+                  <x>370</x>
+                  <y>10</y>
+                  <width>131</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>valor total </string>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="cb_formaPagamento">
+                <property name="geometry">
+                 <rect>
+                  <x>580</x>
+                  <y>30</y>
+                  <width>211</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>16</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_14">
+                <property name="geometry">
+                 <rect>
+                  <x>580</x>
+                  <y>10</y>
+                  <width>181</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>forma pagamento</string>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="db_parcelas">
+                <property name="geometry">
+                 <rect>
+                  <x>230</x>
+                  <y>30</y>
+                  <width>121</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI&quot;;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="showGroupSeparator" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="maximum">
+                 <double>100.000000000000000</double>
+                </property>
+               </widget>
+               <widget class="QDoubleSpinBox" name="db_valortotal">
+                <property name="geometry">
+                 <rect>
+                  <x>370</x>
+                  <y>30</y>
+                  <width>121</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI&quot;;</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="buttonSymbols">
+                 <enum>QAbstractSpinBox::NoButtons</enum>
+                </property>
+                <property name="showGroupSeparator" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="maximum">
+                 <double>99999999999999.000000000000000</double>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_5">
+               <property name="maximumSize">
+                <size>
+                 <width>200</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QPushButton" name="bt_proceSPagamento">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>80</height>
+                   </size>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(221, 221, 221);
+border:2px solid #aaffff ;
+
+font: 13pt &quot;MS Shell Dlg 2&quot;;
+border-radius:5px;</string>
+                  </property>
+                  <property name="text">
+                   <string>processar (f2)</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tb_Parcelamento">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::ActionsContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTableWidget {
+  background-color: white;
+	font: 12pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QTableWidget QHeaderView::section {
+  background-color: gray;
+  color: white;
+  font-weight: bold;
+}
+
+
+</string>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="tabKeyNavigation">
+             <bool>false</bool>
+            </property>
+            <property name="showDropIndicator" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="dragDropOverwriteMode">
+             <bool>false</bool>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>211</number>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderDefaultSectionSize">
+             <number>48</number>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>data vencimento</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>parcelas</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>valor parcelas</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>forma pagamento</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string/>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_7">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="bt_salvarPagamento">
+               <property name="minimumSize">
+                <size>
+                 <width>120</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(221, 221, 221);
+border:2px solid #aaffff ;
+
+font: 18pt &quot;MS Shell Dlg 2&quot;;
+border-radius:5px;</string>
+               </property>
+               <property name="text">
+                <string>salvar</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	text-align:center;
+	color:#fff;
+	border:0px;
+	
+	font-size:20px;
+	cursor: pointer;
+	background-color: rgb(0, 85, 255);
+padding:15px 15px;
+}
+QPushButton:hover{
+background-color:#3668ff;
+}
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="bt_IncluiManual">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>incluir</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="bt_EntraXml">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>xml</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="bt_Notas">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="text">
+            <string>notas </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="bt_adicionar">
+           <property name="text">
+            <string>adicionar nota</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionedita_item">
+   <property name="icon">
+    <iconset resource="../assets/file.qrc">
+     <normaloff>:/telainicial/telainicial/edita.png</normaloff>:/telainicial/telainicial/edita.png</iconset>
+   </property>
+   <property name="text">
+    <string>edita item</string>
+   </property>
+  </action>
+  <action name="actionapagar_item">
+   <property name="icon">
+    <iconset resource="../assets/file.qrc">
+     <normaloff>:/telainicial/telainicial/apagar.ico</normaloff>:/telainicial/telainicial/apagar.ico</iconset>
+   </property>
+   <property name="text">
+    <string>apagar item</string>
+   </property>
+  </action>
+  <action name="actiontest">
+   <property name="icon">
+    <iconset resource="../assets/file.qrc">
+     <normaloff>:/telainicial/telainicial/lupa.png</normaloff>:/telainicial/telainicial/lupa.png</iconset>
+   </property>
+   <property name="text">
+    <string>test</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tx_ChaveNota</tabstop>
+  <tabstop>tx_razaoSocial</tabstop>
+  <tabstop>dt_dataCompra</tabstop>
+  <tabstop>dt_dataEntrada</tabstop>
+  <tabstop>tx_cfop</tabstop>
+  <tabstop>tx_numeSerie</tabstop>
+  <tabstop>tx_cnpj</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../assets/file.qrc"/>
+ </resources>
+ <connections/>
+</ui>

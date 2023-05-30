@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormConfigEmpresa</class>
+ <widget class="QWidget" name="FormConfigEmpresa">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1008</width>
+    <height>694</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>configempresa</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	
+	background-color: rgb(0, 0, 0,200);
+
+}
+
+
+
+QTabWidget::pane { /* The tab widget frame */
+    border-top: 2px solid #C2C7CB;
+    position: absolute;
+
+
+}
+
+
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+    border: 1px solid #C4C4C3;
+    border-bottom-color: #C2C7CB; /* same as the pane color */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-width: 8ex;
+    padding: 2px;
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+}
+
+QTabBar::tab:selected {
+    border-color: #9B9B9B;
+    border-bottom-color: #C2C7CB; /* same as pane color */
+}
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget{
+text-transform: uppercase;
+	background-color: rgb(0, 0, 0,200);
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>1000</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1000</width>
+          <height>700</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget#widget_2{
+text-transform: uppercase;
+
+border-top:0px;
+	background-color: rgb(248, 248, 248);
+}
+</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border:1px solid;
+border-bottom:0px;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>1</number>
+            </property>
+            <property name="topMargin">
+             <number>1</number>
+            </property>
+            <property name="rightMargin">
+             <number>1</number>
+            </property>
+            <property name="bottomMargin">
+             <number>1</number>
+            </property>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="bt_close">
+              <property name="minimumSize">
+               <size>
+                <width>54</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>50</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 2em;
+    padding: 6px;
+}
+
+QPushButton:hover  {
+	color: rgb(255, 255, 255);
+	background-color: red;
+}</string>
+              </property>
+              <property name="text">
+               <string>x</string>
+              </property>
+              <property name="shortcut">
+               <string>Esc</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="fundo" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>600</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>600</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QWidget#fundo{
+text-transform: uppercase;
+border:1px solid blue;
+border-top:0px;
+	background-color: rgb(248, 248, 248);
+}
+</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <property name="spacing">
+             <number>1</number>
+            </property>
+            <property name="leftMargin">
+             <number>1</number>
+            </property>
+            <property name="topMargin">
+             <number>1</number>
+            </property>
+            <property name="rightMargin">
+             <number>1</number>
+            </property>
+            <property name="bottomMargin">
+             <number>1</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="fr_TituloEsotuque">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>80</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>80</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QFrame{
+color:red;
+border: none;
+background-color:#2408D4;}
+
+QLabel{color: white;
+background-color:transparent;
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+text-transform: uppercase;
+}
+</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="lb_TituloEstoque_2">
+                 <property name="font">
+                  <font>
+                   <pointsize>15</pointsize>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QFrame#frame_4{
+color:red;
+border: none;
+background-color:#2408D4;}
+
+QLabel{color: white;
+background-color:transparent;
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>cadastro empresa</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTabWidget" name="tabWidget">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+	
+	background-color: rgb(231, 231, 231);
+text-transform: uppercase;
+}
+QLineEdit{
+background: #CFCFCF;
+border-radius: 2px;
+color: #000;
+font: 13px &quot;Arial&quot; ;
+text-transform: uppercase;
+border:none
+}
+QLineEdit:Focus {
+border: 1px solid red;
+}
+
+QLabel{
+text-transform: uppercase;
+font-size: 12px;
+font-family: &quot;Arial Unicode MS&quot;;
+font-weight: bold;
+	color: rgb(0, 0, 0);
+}
+QComboBox {
+    background-color: #f2f2f2;
+    color: black;
+    font-size: 16px;
+}</string>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="dadosbasico">
+               <attribute name="title">
+                <string>dados basico</string>
+               </attribute>
+               <widget class="QLineEdit" name="lineEdit">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>30</y>
+                  <width>113</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="com_tipo_empres">
+                <property name="geometry">
+                 <rect>
+                  <x>140</x>
+                  <y>30</y>
+                  <width>171</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>fisica</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>juridica</string>
+                 </property>
+                </item>
+               </widget>
+               <widget class="QLineEdit" name="tx_cnpj">
+                <property name="geometry">
+                 <rect>
+                  <x>320</x>
+                  <y>30</y>
+                  <width>161</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="inputMask">
+                 <string>99999999999999</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_rg_ie">
+                <property name="geometry">
+                 <rect>
+                  <x>600</x>
+                  <y>30</y>
+                  <width>141</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="inputMask">
+                 <string>999999999999999</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>81</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>codigo*</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_2">
+                <property name="geometry">
+                 <rect>
+                  <x>140</x>
+                  <y>10</y>
+                  <width>141</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>tipo empressa*</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_3">
+                <property name="geometry">
+                 <rect>
+                  <x>320</x>
+                  <y>10</y>
+                  <width>81</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>cnpj/cpf*</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_4">
+                <property name="geometry">
+                 <rect>
+                  <x>600</x>
+                  <y>10</y>
+                  <width>49</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>rg/ie*</string>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="comb_regime">
+                <property name="geometry">
+                 <rect>
+                  <x>750</x>
+                  <y>30</y>
+                  <width>171</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>simples nacional</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>simples excesso</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>regime normal</string>
+                 </property>
+                </item>
+               </widget>
+               <widget class="QLabel" name="label_5">
+                <property name="geometry">
+                 <rect>
+                  <x>750</x>
+                  <y>10</y>
+                  <width>141</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>regime tributario*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_razaosocio">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>100</y>
+                  <width>381</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_fantasia">
+                <property name="geometry">
+                 <rect>
+                  <x>420</x>
+                  <y>100</y>
+                  <width>501</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_6">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>80</y>
+                  <width>291</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>nome /razao  social*</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_7">
+                <property name="geometry">
+                 <rect>
+                  <x>420</x>
+                  <y>80</y>
+                  <width>231</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>apelido/fantasia*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_cep">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>220</y>
+                  <width>111</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="inputMask">
+                 <string>99.999-999;_</string>
+                </property>
+                <property name="text">
+                 <string>.-</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_8">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>200</y>
+                  <width>91</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>f2|cep*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_endereco">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>160</y>
+                  <width>381</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_numero">
+                <property name="geometry">
+                 <rect>
+                  <x>560</x>
+                  <y>160</y>
+                  <width>91</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="inputMask">
+                 <string/>
+                </property>
+                <property name="maxLength">
+                 <number>32767</number>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_complemento">
+                <property name="geometry">
+                 <rect>
+                  <x>660</x>
+                  <y>160</y>
+                  <width>261</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_9">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>140</y>
+                  <width>141</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>endereço</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_10">
+                <property name="geometry">
+                 <rect>
+                  <x>560</x>
+                  <y>140</y>
+                  <width>81</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>numero*</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_11">
+                <property name="geometry">
+                 <rect>
+                  <x>660</x>
+                  <y>140</y>
+                  <width>131</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>complemento*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_bairro">
+                <property name="geometry">
+                 <rect>
+                  <x>400</x>
+                  <y>160</y>
+                  <width>151</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_cidade">
+                <property name="geometry">
+                 <rect>
+                  <x>250</x>
+                  <y>220</y>
+                  <width>221</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_12">
+                <property name="geometry">
+                 <rect>
+                  <x>400</x>
+                  <y>140</y>
+                  <width>111</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>bairro*</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_14">
+                <property name="geometry">
+                 <rect>
+                  <x>250</x>
+                  <y>200</y>
+                  <width>91</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>cidade*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_estado">
+                <property name="geometry">
+                 <rect>
+                  <x>490</x>
+                  <y>220</y>
+                  <width>51</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="maxLength">
+                 <number>2</number>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_15">
+                <property name="geometry">
+                 <rect>
+                  <x>490</x>
+                  <y>200</y>
+                  <width>31</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>uf*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_cod_pais">
+                <property name="geometry">
+                 <rect>
+                  <x>550</x>
+                  <y>220</y>
+                  <width>121</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::StrongFocus</enum>
+                </property>
+                <property name="inputMask">
+                 <string/>
+                </property>
+                <property name="maxLength">
+                 <number>12</number>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_16">
+                <property name="geometry">
+                 <rect>
+                  <x>560</x>
+                  <y>200</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>codigo pais*</string>
+                </property>
+               </widget>
+               <widget class="QComboBox" name="comb_pais">
+                <property name="geometry">
+                 <rect>
+                  <x>690</x>
+                  <y>220</y>
+                  <width>261</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_17">
+                <property name="geometry">
+                 <rect>
+                  <x>700</x>
+                  <y>200</y>
+                  <width>101</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>pais*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_email">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>280</y>
+                  <width>421</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QLabel" name="lb_logo">
+                <property name="geometry">
+                 <rect>
+                  <x>540</x>
+                  <y>260</y>
+                  <width>200</width>
+                  <height>200</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_18">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>260</y>
+                  <width>91</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>email*</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_19">
+                <property name="geometry">
+                 <rect>
+                  <x>450</x>
+                  <y>260</y>
+                  <width>91</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>logomarca</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_site">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>350</y>
+                  <width>261</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_20">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>330</y>
+                  <width>91</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>site*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_celular">
+                <property name="geometry">
+                 <rect>
+                  <x>280</x>
+                  <y>350</y>
+                  <width>151</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="inputMask">
+                 <string>(99)9.9999-9999</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_21">
+                <property name="geometry">
+                 <rect>
+                  <x>280</x>
+                  <y>330</y>
+                  <width>91</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>celular*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_responsavel">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>410</y>
+                  <width>261</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_22">
+                <property name="geometry">
+                 <rect>
+                  <x>280</x>
+                  <y>390</y>
+                  <width>161</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>celular responsavel*</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_celularRep">
+                <property name="geometry">
+                 <rect>
+                  <x>280</x>
+                  <y>410</y>
+                  <width>151</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="inputMask">
+                 <string>(99)9.9999-9999</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_23">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>390</y>
+                  <width>211</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>responsalve pela empresa*</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_24">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>450</y>
+                  <width>451</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">font: 18pt &quot;Segoe UI&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>campos com (*) obrigatorios</string>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_codMunicipio">
+                <property name="geometry">
+                 <rect>
+                  <x>130</x>
+                  <y>220</y>
+                  <width>111</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_25">
+                <property name="geometry">
+                 <rect>
+                  <x>130</x>
+                  <y>200</y>
+                  <width>111</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>cod-municipo</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="bt_sintegra">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="geometry">
+                 <rect>
+                  <x>490</x>
+                  <y>30</y>
+                  <width>101</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string>cl sintegra</string>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="tab_2">
+               <attribute name="title">
+                <string>Tab 2</string>
+               </attribute>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_2">
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+text-transform: uppercase;
+	background-color: rgb(229, 229, 229);
+}</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QPushButton" name="bt_salvar">
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 85, 255);</string>
+              </property>
+              <property name="text">
+               <string>SALVAR</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionbuscar_cnpj">
+   <property name="text">
+    <string>buscar cnpj</string>
+   </property>
+  </action>
+  <action name="actionbuscar_cep">
+   <property name="text">
+    <string>buscar cep</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>com_tipo_empres</tabstop>
+  <tabstop>tx_cnpj</tabstop>
+  <tabstop>tx_rg_ie</tabstop>
+  <tabstop>comb_regime</tabstop>
+  <tabstop>tx_razaosocio</tabstop>
+  <tabstop>tx_fantasia</tabstop>
+  <tabstop>tx_endereco</tabstop>
+  <tabstop>tx_bairro</tabstop>
+  <tabstop>tx_numero</tabstop>
+  <tabstop>tx_complemento</tabstop>
+  <tabstop>tx_cep</tabstop>
+  <tabstop>tx_cidade</tabstop>
+  <tabstop>tx_estado</tabstop>
+  <tabstop>comb_pais</tabstop>
+  <tabstop>tx_email</tabstop>
+  <tabstop>tx_site</tabstop>
+  <tabstop>tx_celular</tabstop>
+  <tabstop>tx_responsavel</tabstop>
+  <tabstop>tx_celularRep</tabstop>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

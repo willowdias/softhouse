@@ -1,0 +1,3035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Cadastro_Clientes</class>
+ <widget class="QWidget" name="Cadastro_Clientes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1934</width>
+    <height>777</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastro Clientes</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Cadastro_Clientes{
+	background-color: rgb(0, 0, 0,200);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="styleSheet">
+      <string notr="true">
+QWidget#widget_3{
+	background-color: rgb(0, 0, 0,200);
+}</string>
+     </property>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>1201</width>
+        <height>711</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>900</width>
+        <height>600</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#widget{
+text-transform: uppercase;
+border:1px solid blue;
+	background-color: rgb(231, 231, 231);
+}
+QWidget{
+text-transform: uppercase;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="leftMargin">
+        <number>1</number>
+       </property>
+       <property name="topMargin">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>1</number>
+       </property>
+       <property name="bottomMargin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame#frame_2{
+color:red;
+border: none;
+background-color:#2408D4;}
+
+QLabel{color: white;
+background-color:transparent;
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+
+}
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="lb_FormProdutos">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>FICHA CADASTRAL CLIENTE</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="tab_fichaCliente">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+	background: #FFF;
+}
+QLineEdit:focus{
+	background-color: rgb(226, 226, 226);
+}
+
+
+QLabel{
+text-transform: uppercase;
+font-size: 12px;
+font-family: &quot;Arial Unicode MS&quot;;
+font-weight: bold;
+color: black;
+	background-color: none;
+}
+</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="dados">
+          <attribute name="title">
+           <string>dados basico</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QFrame" name="fr_FormClientes">
+             <property name="styleSheet">
+              <string notr="true">QFrame
+{
+	background-color: rgb(229, 229, 229);
+border: none
+}
+</string>
+             </property>
+             <widget class="QLabel" name="lb_nome_2">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>271</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>codigo</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_codigoCliente">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>131</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_cnpj">
+              <property name="geometry">
+               <rect>
+                <x>150</x>
+                <y>40</y>
+                <width>196</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="inputMask">
+               <string>999.999.999-99;_</string>
+              </property>
+              <property name="text">
+               <string>..-</string>
+              </property>
+              <property name="maxLength">
+               <number>14</number>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_cpfcnpj">
+              <property name="geometry">
+               <rect>
+                <x>150</x>
+                <y>10</y>
+                <width>190</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>CPF*</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_nome">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>80</y>
+                <width>271</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>NOME*</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_NomeFantasia">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>110</y>
+                <width>801</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_sobrenome">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>150</y>
+                <width>301</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>SOBRENOME*</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_RazaoSocial">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>180</y>
+                <width>305</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_rg">
+              <property name="geometry">
+               <rect>
+                <x>360</x>
+                <y>10</y>
+                <width>201</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>RG*</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_InscEstadual">
+              <property name="geometry">
+               <rect>
+                <x>360</x>
+                <y>40</y>
+                <width>196</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="inputMask">
+               <string/>
+              </property>
+              <property name="maxLength">
+               <number>15</number>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_8">
+              <property name="geometry">
+               <rect>
+                <x>340</x>
+                <y>180</y>
+                <width>541</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+font-size: 14px;
+font-family: &quot;Arial&quot;;
+font-weight: normal;
+
+border-bottom: 2px solid #000000;
+color: #000000
+}</string>
+              </property>
+              <property name="text">
+               <string>ENDEREÇO</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_16">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>220</y>
+                <width>91</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>cod-ibge*</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_cod_ibge">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>240</y>
+                <width>141</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="inputMask">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>COD-IBGE</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_10">
+              <property name="geometry">
+               <rect>
+                <x>170</x>
+                <y>220</y>
+                <width>50</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>CEP*</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_Cep">
+              <property name="geometry">
+               <rect>
+                <x>160</x>
+                <y>240</y>
+                <width>100</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="inputMask">
+               <string>99999-999</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>123456789</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_Cidade">
+              <property name="geometry">
+               <rect>
+                <x>270</x>
+                <y>240</y>
+                <width>260</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="inputMask">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>cidade</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_14">
+              <property name="geometry">
+               <rect>
+                <x>270</x>
+                <y>210</y>
+                <width>120</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>CIDADE*</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_Estado">
+              <property name="geometry">
+               <rect>
+                <x>540</x>
+                <y>240</y>
+                <width>70</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="inputMask">
+               <string/>
+              </property>
+              <property name="maxLength">
+               <number>2</number>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>estado</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_15">
+              <property name="geometry">
+               <rect>
+                <x>540</x>
+                <y>210</y>
+                <width>70</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>ESTADO*</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_11">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>280</y>
+                <width>250</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>ENDEREÇO*</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_Endereco">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>310</y>
+                <width>400</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::WheelFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="inputMask">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>endereço</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_13">
+              <property name="geometry">
+               <rect>
+                <x>430</x>
+                <y>280</y>
+                <width>271</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>BAIRRO*</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_Bairro">
+              <property name="geometry">
+               <rect>
+                <x>420</x>
+                <y>310</y>
+                <width>291</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="inputMask">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>bairro</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_12">
+              <property name="geometry">
+               <rect>
+                <x>730</x>
+                <y>280</y>
+                <width>91</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Nº *</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_Numero">
+              <property name="geometry">
+               <rect>
+                <x>730</x>
+                <y>310</y>
+                <width>191</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="inputMethodHints">
+               <set>Qt::ImhNone</set>
+              </property>
+              <property name="inputMask">
+               <string/>
+              </property>
+              <property name="maxLength">
+               <number>3250</number>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="placeholderText">
+               <string>numero</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_23">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>350</y>
+                <width>241</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>Email</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_Email">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>380</y>
+                <width>391</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::WheelFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="placeholderText">
+               <string>email</string>
+              </property>
+             </widget>
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="geometry">
+               <rect>
+                <x>940</x>
+                <y>10</y>
+                <width>211</width>
+                <height>331</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 900 10pt &quot;Arial Black&quot;;</string>
+              </property>
+              <property name="title">
+               <string>paramentros</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <widget class="QCheckBox" name="cheCliente">
+                 <property name="focusPolicy">
+                  <enum>Qt::ClickFocus</enum>
+                 </property>
+                 <property name="text">
+                  <string>clientes</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="CheAtivo">
+                 <property name="focusPolicy">
+                  <enum>Qt::ClickFocus</enum>
+                 </property>
+                 <property name="text">
+                  <string>ativo</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="cheFornecedor">
+                 <property name="focusPolicy">
+                  <enum>Qt::ClickFocus</enum>
+                 </property>
+                 <property name="text">
+                  <string>fornecedor</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="cheSpc">
+                 <property name="focusPolicy">
+                  <enum>Qt::ClickFocus</enum>
+                 </property>
+                 <property name="text">
+                  <string>spc</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="chefotos">
+                 <property name="text">
+                  <string>fotos</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="cheobs">
+                 <property name="text">
+                  <string>obs</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="cheadicionais">
+                 <property name="text">
+                  <string>adicionais</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checontatos">
+                 <property name="text">
+                  <string>contatos</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_5">
+              <property name="geometry">
+               <rect>
+                <x>410</x>
+                <y>360</y>
+                <width>140</width>
+                <height>14</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>CELULAR</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_Celular">
+              <property name="geometry">
+               <rect>
+                <x>410</x>
+                <y>380</y>
+                <width>140</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::WheelFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="inputMask">
+               <string>(00) 00000-0000</string>
+              </property>
+              <property name="text">
+               <string>() -</string>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_24">
+              <property name="geometry">
+               <rect>
+                <x>560</x>
+                <y>360</y>
+                <width>140</width>
+                <height>14</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>TELEFONE</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_Telefone">
+              <property name="geometry">
+               <rect>
+                <x>560</x>
+                <y>380</y>
+                <width>140</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::WheelFocus</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="inputMask">
+               <string>(00) 0000-0000</string>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_17">
+              <property name="geometry">
+               <rect>
+                <x>710</x>
+                <y>370</y>
+                <width>121</width>
+                <height>14</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>data nascimento</string>
+              </property>
+             </widget>
+             <widget class="QDateEdit" name="dt_nascimento">
+              <property name="geometry">
+               <rect>
+                <x>710</x>
+                <y>390</y>
+                <width>121</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+              </property>
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_18">
+              <property name="geometry">
+               <rect>
+                <x>850</x>
+                <y>365</y>
+                <width>121</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>data cadastro</string>
+              </property>
+             </widget>
+             <widget class="QDateEdit" name="dat_cadastro">
+              <property name="geometry">
+               <rect>
+                <x>840</x>
+                <y>390</y>
+                <width>121</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+              </property>
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_19">
+              <property name="geometry">
+               <rect>
+                <x>970</x>
+                <y>370</y>
+                <width>121</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>ultima compra</string>
+              </property>
+             </widget>
+             <widget class="QDateEdit" name="dt_compra">
+              <property name="geometry">
+               <rect>
+                <x>970</x>
+                <y>390</y>
+                <width>121</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+              </property>
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="comb_FisicoJuridico">
+              <property name="geometry">
+               <rect>
+                <x>570</x>
+                <y>40</y>
+                <width>241</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+              <item>
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>fisico</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>juridico</string>
+               </property>
+              </item>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="observacao">
+          <attribute name="title">
+           <string>OBSERVAÇÃO</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="lb_FormProdutos_7">
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
+             </property>
+             <property name="text">
+              <string>OBSERVAÇÃO</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="tx_Obs">
+             <property name="styleSheet">
+              <string notr="true">selection-background-color: rgb(0, 0, 0);
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+selection-color: rgb(85, 255, 127);</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="fotos">
+          <attribute name="title">
+           <string>fotos</string>
+          </attribute>
+          <widget class="QLabel" name="lb_fotoClientes">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>10</y>
+             <width>200</width>
+             <height>200</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:#538fff;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>:/newPrefix/img/profile.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="bt_selecionar_foto">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>160</y>
+             <width>41</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>35</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::NoContextMenu</enum>
+           </property>
+           <property name="toolTip">
+            <string>Selecionar Foto</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+ text-align: justify;
+	color:#fff;
+	border:0px;
+	border-radius:20px;
+	font-size:15px;
+	cursor: pointer;
+background-color: #7AB32E;
+	margin:0px
+}
+QPushButton:hover{
+background-color:#3668ff;
+}
+
+
+</string>
+           </property>
+           <property name="text">
+            <string>+</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>:/newPrefix/img/mais.png</normaloff>:/newPrefix/img/mais.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="adicionais">
+          <attribute name="title">
+           <string>adicionais</string>
+          </attribute>
+          <widget class="QComboBox" name="cb_estadoScont">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>170</y>
+             <width>151</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>solteiro</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>casado</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>viuvo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>divorciado</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLineEdit" name="tx_NomePai">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>40</y>
+             <width>531</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::WheelFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="placeholderText">
+            <string/>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lb_FormProdutos_6">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>20</y>
+             <width>150</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>pai</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lb_FormProdutos_9">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>80</y>
+             <width>150</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>mae</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="tx_nomeMae">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>110</y>
+             <width>531</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::WheelFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="placeholderText">
+            <string/>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lb_FormProdutos_20">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>150</y>
+             <width>113</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>estado civil</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>170</y>
+             <width>211</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>masculino</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>feminino</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="lb_FormProdutos_21">
+           <property name="geometry">
+            <rect>
+             <x>210</x>
+             <y>150</y>
+             <width>113</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>sexo</string>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="db_salario">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>170</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="showGroupSeparator" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="prefix">
+            <string>R$ </string>
+           </property>
+           <property name="maximum">
+            <double>99999999.000000000000000</double>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lb_FormProdutos_22">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>150</y>
+             <width>113</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>salario</string>
+           </property>
+          </widget>
+          <widget class="QDoubleSpinBox" name="db_limitecredito">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>170</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::NoButtons</enum>
+           </property>
+           <property name="showGroupSeparator" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="prefix">
+            <string>R$ </string>
+           </property>
+           <property name="maximum">
+            <double>99999999.000000000000000</double>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lb_FormProdutos_25">
+           <property name="geometry">
+            <rect>
+             <x>590</x>
+             <y>150</y>
+             <width>113</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>limite de credito</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>230</y>
+             <width>113</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="inputMask">
+            <string>99/99/999;_</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lb_FormProdutos_26">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>210</y>
+             <width>113</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>dt_demissao</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="lb_FormProdutos_27">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>210</y>
+             <width>113</width>
+             <height>17</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>dt admissao</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_2">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>230</y>
+             <width>113</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="inputMask">
+            <string>99/99/999;_</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox">
+           <property name="geometry">
+            <rect>
+             <x>600</x>
+             <y>40</y>
+             <width>101</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>atendente</string>
+           </property>
+          </widget>
+          <widget class="QCheckBox" name="checkBox_2">
+           <property name="geometry">
+            <rect>
+             <x>710</x>
+             <y>40</y>
+             <width>101</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>tecnico</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="contatos">
+          <attribute name="title">
+           <string>contatos</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QTableWidget" name="tabContatos">
+             <property name="styleSheet">
+              <string notr="true">QTableView{
+background: #F1F1F1;
+color: black;
+font-weight: bold;
+font-size: 12px;
+border:1px solid;
+	selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(85, 170, 255);
+}
+QHeaderView:section{
+background: #FFF;
+
+font-size: 12px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+color: #797979;
+border:none;
+border-bottom: 2px solid black;
+border-top:2px solid black;
+padding:5px 0px;
+text-transform: uppercase
+}
+</string>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="tabKeyNavigation">
+              <bool>true</bool>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+             <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="horizontalHeaderStretchLastSection">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>data/hora</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>data retorno</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>pessoa</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_2" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>300</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+QPushButton{
+background-color: rgb(231, 231, 231);
+border:1px solid ;
+border-radius:5px;
+}
+QPushButton:hover{
+	background-color: rgb(214, 214, 214);
+}</string>
+             </property>
+             <widget class="QLineEdit" name="tx_dataretornocontato">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>70</y>
+                <width>113</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="inputMask">
+               <string>99/99/999;_</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_51">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>50</y>
+                <width>113</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>dt retorno</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="tx_movitocontato">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>130</y>
+                <width>841</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:0px solid;
+border-bottom:1px solid </string>
+              </property>
+             </widget>
+             <widget class="QPlainTextEdit" name="tex_descricacontato">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>190</y>
+                <width>851</width>
+                <height>91</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:1px solid;</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_52">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>110</y>
+                <width>191</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>motivo do contato</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="lb_FormProdutos_53">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>170</y>
+                <width>211</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>descriçao do contato</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="bt_validarContato">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>400</x>
+                <y>60</y>
+                <width>96</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/file.qrc">
+                <normaloff>:/novo/telainicial/finalizado.png</normaloff>:/novo/telainicial/finalizado.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="bt_adicionar_novocontato">
+              <property name="geometry">
+               <rect>
+                <x>160</x>
+                <y>60</y>
+                <width>96</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/file.qrc">
+                <normaloff>:/novo/telainicial/mais.png</normaloff>:/novo/telainicial/mais.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="bt_apagarcontato">
+              <property name="geometry">
+               <rect>
+                <x>290</x>
+                <y>60</y>
+                <width>96</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/file.qrc">
+                <normaloff>:/novo/telainicial/menos.png</normaloff>:/novo/telainicial/menos.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="bt_cancelarContato">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="geometry">
+               <rect>
+                <x>510</x>
+                <y>60</y>
+                <width>96</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../assets/file.qrc">
+                <normaloff>:/novo/telainicial/x.png</normaloff>:/novo/telainicial/x.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="fr_BotoesFormProdutos">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background:#E1DFE0;
+border: none;</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="bt_Salvar">
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	text-align:center;
+	color:#fff;
+	border:0px;
+	
+	font-size:20px;
+	cursor: pointer;
+	
+	background-color: rgb(85, 170, 0);
+padding:15px 15px;
+}
+QPushButton:hover{
+background-color:#3668ff;
+}</string>
+            </property>
+            <property name="text">
+             <string>SALVAR</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>75</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="shortcut">
+             <string>F2</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_sair">
+            <property name="font">
+             <font>
+              <pointsize>-1</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	text-align:center;
+	color:#fff;
+	border:0px;
+	
+	font-size:20px;
+	cursor: pointer;
+	background-color: rgb(0, 85, 255);
+padding:15px 15px;
+}
+QPushButton:hover{
+background-color:#3668ff;
+}</string>
+            </property>
+            <property name="text">
+             <string>Sair</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>75</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="shortcut">
+             <string>Esc</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="Cidades" native="true">
+      <property name="geometry">
+       <rect>
+        <x>1300</x>
+        <y>270</y>
+        <width>471</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget#Cidades{
+text-transform: uppercase;
+border:1px solid blue;
+background-color: rgb(85, 170, 255);
+}
+
+QLineEdit{
+
+	background-color: rgb(250, 250, 250);
+font-size: 11px;
+
+}
+QLineEdit:focus{
+	background-color: rgb(226, 226, 226);
+}
+
+QLabel{
+color:#4b6272;
+border:0px;
+font-size:15px;
+	background-color: none;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0,0,0">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>15</number>
+       </property>
+       <property name="topMargin">
+        <number>15</number>
+       </property>
+       <property name="rightMargin">
+        <number>15</number>
+       </property>
+       <property name="bottomMargin">
+        <number>15</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_BUSCA_2">
+         <property name="styleSheet">
+          <string notr="true">border:none;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="line_busca_cidades">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::WheelFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="placeholderText">
+             <string>CONSULTA CIDADE</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget_2">
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="WindowText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>241</red>
+               <green>241</green>
+               <blue>241</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Text">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>241</red>
+               <green>241</green>
+               <blue>241</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>241</red>
+               <green>241</green>
+               <blue>241</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Highlight">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>85</red>
+               <green>170</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="HighlightedText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="PlaceholderText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="WindowText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>241</red>
+               <green>241</green>
+               <blue>241</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Text">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>241</red>
+               <green>241</green>
+               <blue>241</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>241</red>
+               <green>241</green>
+               <blue>241</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Highlight">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>85</red>
+               <green>170</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="HighlightedText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="PlaceholderText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="WindowText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>241</red>
+               <green>241</green>
+               <blue>241</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Text">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>241</red>
+               <green>241</green>
+               <blue>241</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>241</red>
+               <green>241</green>
+               <blue>241</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Highlight">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>85</red>
+               <green>170</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="HighlightedText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="PlaceholderText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>0</red>
+               <green>0</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableView{
+background: #F1F1F1;
+color: black;
+font-weight: bold;
+font-size: 12px;
+border:1px solid;
+	selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(85, 170, 255);
+}
+QHeaderView:section{
+background: #FFF;
+
+font-size: 12px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+color: #797979;
+border:none;
+border-bottom: 2px solid black;
+border-top:2px solid black;
+padding:5px 0px;
+text-transform: uppercase
+}
+</string>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="tabKeyNavigation">
+          <bool>false</bool>
+         </property>
+         <property name="showDropIndicator" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="dragDropOverwriteMode">
+          <bool>false</bool>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="rowCount">
+          <number>0</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>150</number>
+         </attribute>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>COD-IBGE</string>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+          <property name="background">
+           <color>
+            <red>70</red>
+            <green>145</green>
+            <blue>154</blue>
+           </color>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>CIDADE</string>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+          <property name="background">
+           <color>
+            <red>70</red>
+            <green>145</green>
+            <blue>154</blue>
+           </color>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>CEP</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>UF</string>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+          <property name="background">
+           <color>
+            <red>70</red>
+            <green>145</green>
+            <blue>154</blue>
+           </color>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_5">
+         <property name="styleSheet">
+          <string notr="true">QWidget{
+
+text-transform: uppercase;}
+QPushButton{
+	text-align:center;
+	color:#fff;
+	border:0px;
+	
+	font-size:12px;
+	cursor: pointer;
+	background-color: rgb(0, 85, 255);
+padding:5px 15px;
+}
+QPushButton:hover{
+background-color:#3668ff;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QPushButton" name="adicionar_cidade">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>Adicionar </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="altera_cidade">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>Alterar</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_delete_cidade">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>Deletar</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_SairTelaCidade">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="text">
+             <string>sair</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="cadastro_cidades" native="true">
+      <property name="geometry">
+       <rect>
+        <x>1230</x>
+        <y>70</y>
+        <width>651</width>
+        <height>235</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>651</width>
+        <height>235</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QWidget#cadastro_cidades{
+text-transform: uppercase;
+border:1px solid blue;
+background-color: rgb(85, 170, 255);
+}
+QLineEdit{
+background-color: rgb(255, 255, 127);
+font-size: 16px;
+font-family: &quot;Arial&quot;;
+font-weight: bold;
+color: rgb(0, 0, 0);
+border:none;
+border-bottom-left-radius:0px;
+border-bottom-right-radius:0px;
+border-top-left-radius:0px;
+padding:6px
+}
+QLineEdit:focus{
+	background-color: rgb(226, 226, 226);
+}
+
+QLabel{
+color:black;
+border:0px;
+font-size:15px;
+	background-color: none;
+}
+
+
+</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_8" stretch="0,0,0">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>15</number>
+       </property>
+       <property name="topMargin">
+        <number>15</number>
+       </property>
+       <property name="rightMargin">
+        <number>15</number>
+       </property>
+       <property name="bottomMargin">
+        <number>15</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_6">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <spacer name="horizontalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>10</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>COD-IBGE</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>NOME CIDADE</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>500</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>CEP</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>80</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>ESTADO</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_12">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_7">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+border:none;
+}
+
+Line{
+border:5px solid red;
+
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="tx_cid_cod_ibge">
+            <property name="maximumSize">
+             <size>
+              <width>180</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::StrongFocus</enum>
+            </property>
+            <property name="maxLength">
+             <number>8</number>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::PasswordEchoOnEdit</enum>
+            </property>
+            <property name="placeholderText">
+             <string>COD-IBGE</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="tx_cid_cidade">
+            <property name="focusPolicy">
+             <enum>Qt::StrongFocus</enum>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::PasswordEchoOnEdit</enum>
+            </property>
+            <property name="placeholderText">
+             <string>NOME CIDADE</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="tx_cid_cep">
+            <property name="maximumSize">
+             <size>
+              <width>130</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::StrongFocus</enum>
+            </property>
+            <property name="inputMask">
+             <string>9999-9999</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="tx_cid_estado">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>RO</string>
+            </property>
+            <property name="maxLength">
+             <number>2</number>
+            </property>
+            <property name="placeholderText">
+             <string>UF</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_8">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>70</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+border:none;
+background-color: #1E87F0;
+color: #FFF;
+padding:15px 60px;
+	font: 75 14pt &quot;Tahoma&quot;;
+ }
+QPushButton:hover{
+background-color: #40a286
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QPushButton" name="bt_grava_cidade">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+background-color: #7AB32E;
+color: #FFF;
+padding:5px ;
+	font: 12pt &quot;Segoe UI&quot;;
+ }
+QPushButton:hover{
+background-color: #40a286
+}</string>
+            </property>
+            <property name="text">
+             <string>GRAVAR (F2)</string>
+            </property>
+            <property name="shortcut">
+             <string>F2</string>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_cancelarCadastrocidade">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	text-align:center;
+	color:#fff;
+	border:0px;
+	
+	font-size:12px;
+	cursor: pointer;
+	background-color: rgb(0, 85, 255);
+padding:5px 
+}
+QPushButton:hover{
+background-color:#3668ff;
+}</string>
+            </property>
+            <property name="text">
+             <string>CANCELAR</string>
+            </property>
+            <property name="shortcut">
+             <string>Esc</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionbusca_cep">
+   <property name="icon">
+    <iconset resource="../assets/file.qrc">
+     <normaloff>:/telainicial/telainicial/lupa.png</normaloff>:/telainicial/telainicial/lupa.png</iconset>
+   </property>
+   <property name="text">
+    <string>busca cep</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tx_cnpj</tabstop>
+  <tabstop>tx_InscEstadual</tabstop>
+  <tabstop>tx_NomeFantasia</tabstop>
+  <tabstop>tx_RazaoSocial</tabstop>
+  <tabstop>tx_Cep</tabstop>
+  <tabstop>tx_Cidade</tabstop>
+  <tabstop>tx_Estado</tabstop>
+  <tabstop>tx_Endereco</tabstop>
+  <tabstop>tx_Bairro</tabstop>
+  <tabstop>tx_Numero</tabstop>
+  <tabstop>tx_Email</tabstop>
+  <tabstop>tx_Celular</tabstop>
+  <tabstop>tx_Telefone</tabstop>
+  <tabstop>dt_nascimento</tabstop>
+  <tabstop>dat_cadastro</tabstop>
+  <tabstop>dt_compra</tabstop>
+  <tabstop>tableWidget_2</tabstop>
+  <tabstop>tx_cid_cod_ibge</tabstop>
+  <tabstop>tx_NomePai</tabstop>
+  <tabstop>tx_nomeMae</tabstop>
+  <tabstop>cb_estadoScont</tabstop>
+  <tabstop>tx_cid_cep</tabstop>
+  <tabstop>tx_cid_cidade</tabstop>
+  <tabstop>tx_cid_estado</tabstop>
+  <tabstop>line_busca_cidades</tabstop>
+  <tabstop>tx_Obs</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../assets/file.qrc"/>
+ </resources>
+ <connections/>
+</ui>

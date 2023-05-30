@@ -1,0 +1,9 @@
+pip install pyqt5-tools
+pip install pyqt6-tools
+pip install PyQt5
+pip install PyQtWebEngine
+pip install canvas
+pip install reportlab
+pip install mindsdb
+pip install webdriver-manager
+pip install python-barcode

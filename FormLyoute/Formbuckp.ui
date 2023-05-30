@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Formbuckp</class>
+ <widget class="QWidget" name="Formbuckp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>912</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget{
+	background-color: rgb(0, 0, 0,200);
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>500</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>500</width>
+          <height>500</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget#widget_2{
+text-transform: uppercase;
+border:1px solid blue;
+	background-color: rgb(231, 231, 231);
+}
+
+</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="leftMargin">
+          <number>1</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>1</number>
+         </property>
+         <property name="bottomMargin">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="frame_7">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame#frame_7{
+color:red;
+border: none;
+background-color:#2408D4;}
+
+QLabel{color: white;
+background-color:transparent;
+font: 75 15pt &quot;MS Shell Dlg 2&quot;;
+border:none
+}
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="styleSheet">
+               <string notr="true">text-transform: uppercase;</string>
+              </property>
+              <property name="text">
+               <string>backup banco de dados</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QStackedWidget" name="stackedWidget">
+           <property name="styleSheet">
+            <string notr="true">QWidget#inicial{
+text-transform: uppercase;
+
+	background-color: rgb(231, 231, 231);
+}
+
+
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="inicial">
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QFrame" name="frame">
+               <property name="styleSheet">
+                <string notr="true">text-transform: uppercase;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QLineEdit" name="tx_origem">
+                <property name="geometry">
+                 <rect>
+                  <x>30</x>
+                  <y>100</y>
+                  <width>391</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+               </widget>
+               <widget class="QCommandLinkButton" name="bt_origem">
+                <property name="geometry">
+                 <rect>
+                  <x>420</x>
+                  <y>100</y>
+                  <width>51</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+               <widget class="QLineEdit" name="tx_destino">
+                <property name="geometry">
+                 <rect>
+                  <x>30</x>
+                  <y>210</y>
+                  <width>391</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label">
+                <property name="geometry">
+                 <rect>
+                  <x>30</x>
+                  <y>70</y>
+                  <width>271</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>caminho origem</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_2">
+                <property name="geometry">
+                 <rect>
+                  <x>30</x>
+                  <y>180</y>
+                  <width>271</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>caminho destino</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="bt_start">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>333</y>
+                  <width>121</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string>iniciar</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="bt_cancelar">
+                <property name="geometry">
+                 <rect>
+                  <x>330</x>
+                  <y>340</y>
+                  <width>121</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string>cancelar</string>
+                </property>
+                <property name="shortcut">
+                 <string>Esc</string>
+                </property>
+               </widget>
+               <widget class="QRadioButton" name="rd_compactar">
+                <property name="geometry">
+                 <rect>
+                  <x>30</x>
+                  <y>30</y>
+                  <width>181</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string>comprimir arquivo</string>
+                </property>
+               </widget>
+               <widget class="QRadioButton" name="rd_naocomprimir">
+                <property name="geometry">
+                 <rect>
+                  <x>220</x>
+                  <y>30</y>
+                  <width>211</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string>nao comprimir</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="lb_link">
+                <property name="geometry">
+                 <rect>
+                  <x>30</x>
+                  <y>310</y>
+                  <width>441</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+               <widget class="QRadioButton" name="rd_mysql">
+                <property name="geometry">
+                 <rect>
+                  <x>360</x>
+                  <y>30</y>
+                  <width>131</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string>banco mysql</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="mysql">
+            <property name="styleSheet">
+             <string notr="true">QWidget#mysql{
+text-transform: uppercase;
+
+	background-color: rgb(231, 231, 231);
+}
+
+QLabel{
+text-transform: uppercase;
+}</string>
+            </property>
+            <widget class="QLineEdit" name="db_host">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>60</y>
+               <width>161</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>localhost</string>
+             </property>
+             <property name="placeholderText">
+              <string>local</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_4">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>40</y>
+               <width>91</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>db_host</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="db_name">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>60</y>
+               <width>161</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>banco</string>
+             </property>
+             <property name="placeholderText">
+              <string>nome banco</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_5">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>40</y>
+               <width>111</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>db_name</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="db_user">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>120</y>
+               <width>161</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>root</string>
+             </property>
+             <property name="placeholderText">
+              <string>usuario</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_6">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>100</y>
+               <width>49</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>db_user</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="db_password">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>120</y>
+               <width>161</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>2525</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>senha</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_7">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>100</y>
+               <width>161</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>db_password</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="mysqcaminhoorigem">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>190</y>
+               <width>321</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::ClickFocus</enum>
+             </property>
+             <property name="text">
+              <string>C:\wamp64/bin/mysql/mysql5.7.31/bin/mysqldump</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_8">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>170</y>
+               <width>261</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>caminho origem</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="mysqcaminhodestino">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>250</y>
+               <width>321</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::ClickFocus</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_9">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>230</y>
+               <width>321</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>caminho destino</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="bt_starmysql">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>360</y>
+               <width>121</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>START</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="bt_voltaincial">
+             <property name="geometry">
+              <rect>
+               <x>340</x>
+               <y>360</y>
+               <width>121</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>VOLTA</string>
+             </property>
+             <property name="shortcut">
+              <string>Esc</string>
+             </property>
+            </widget>
+            <widget class="QCommandLinkButton" name="com_origem">
+             <property name="geometry">
+              <rect>
+               <x>360</x>
+               <y>190</y>
+               <width>41</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QCommandLinkButton" name="comdestino">
+             <property name="geometry">
+              <rect>
+               <x>360</x>
+               <y>250</y>
+               <width>41</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

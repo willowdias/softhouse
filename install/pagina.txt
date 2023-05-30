@@ -1,0 +1,20 @@
+ self.ui.pushButton.clicked.connect(self.timel)
+    def timel(self):
+        total=[]
+        caminho=self.ui.lineEdit.text()
+        meuArquivo = open(caminho)
+        nomes = meuArquivo.readlines()
+        for nome in nomes:
+            total.append(nome)
+        run=0
+        self.ui.progressBar.setMaximum(len(total))
+        for i in range(len(total)):
+            run=i+1
+            time.sleep(0.00005)
+            
+                
+            self.ui.progressBar.setValue(run)
+            node = self.ui.treeWidget.currentItem('clientes') 
+        root=self.ui.treeWidget.invisibleRootItem()  
+        if node in self.ui.treeWidget.selectedItems():
+            (node.parent() or root).removeChild(node)

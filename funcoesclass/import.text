@@ -1,0 +1,105 @@
+pyuic5 FormLyoute/FormInicial.ui -o funcoesclass/FormCode/inicial.py 
+
+pyuic5 FormLyoute/FormConfigEmpresa.ui -o funcoesclass/FormCode/FormConfigEmpresa.py 
+#buckp
+pyuic5 FormLyoute/Formbuckp.ui -o FormCode/Formbuckp.py 
+#lmebrete
+pyuic5 FormLyoute/FormLembrete.ui -o FormCode/FormLembreteal.py 
+#PdvVenda
+pyuic5 FormLyoute/MAINPDV.ui -o FormCode/MAINPDV.py
+#controleio Vendas
+pyuic5 FormLyoute/FormControleioInterno.ui -o FormCode/FormControleioInterno.py
+#fornm finalizar venda
+pyuic5 FormLyoute/FormPagamentoControleioInterno.ui -o FormCode/FormPagamentoControleioInterno.py 
+
+#abertura de caixa pdv
+pyuic5 FormLyoute/FormAberturaCaixaPdv.ui -o FormCode/FormAberturaCaixaPdv.py
+
+#FormFinalizar Venda
+pyuic5 FormLyoute/FormFinalizaVenda.ui -o FormCode/FormFinalizaVenda.py 
+#orçamentos
+pyuic5 FormLyoute/FormVisualisarOrcamentos.ui -o FormCode/FormVisualisarOrcamentos.py 
+
+#form tela clientes
+pyuic5 FormLyoute/FormControleioCliente.ui -o FormCode/FormControleioClientes.py 
+
+icluir clientes
+pyuic5 FormLyoute/FormIncluiClientes.ui -o FormCode/FormIncluiClientes.py 
+
+#estoque
+pyuic5 FormLyoute/FormControleioEstoque.ui -o FormCode/FormControleioEstoques.py 
+#form inluir estoquef
+pyuic5 FormLyoute/FormIncluirEstoque.ui -o FormCode/FormIncluirEstoques.py 
+#form FormProdutosGrupovisualisar
+pyuic5 FormLyoute/FormRestaurante.ui -o FormCode/FormRestaurante.py 
+
+#from grupoDeprodutos
+
+pyuic5 FormLyoute/FormGrupoProdutos.ui -o FormCode/FormGrupoProdutos.py 
+
+#from QUANTIDADE FormAlteraQuantidade
+pyuic5 FormLyoute/FormAlteraQuantidade.ui -o FormCode/FormAlteraQuantidade.py 
+
+#Form Incluir Forncedor
+pyuic5 FormLyoute/FormIncluirFornecedor.ui -o FormCode/FormIncluirFornecedores.py 
+
+
+#form Inclui FormIncluirParcela
+pyuic5 FormLyoute/FormIncluirParcela.ui -o FormCode/FormIncluirParcela.py 
+
+#form Inclui FormIncluirTipodocumento
+pyuic5 FormLyoute/FormIncluirTipodocumento.ui -o FormCode/FormIncluirTipodocumento.py 
+
+#telalogin
+pyuic5 FormLyoute/FormTelaLogin.ui -o FormCode/FormTelaLogin.py 
+
+pyrcc5 assets/file.qrc -o assets/file.py
+
+#Form ContaREceber 
+
+pyuic5 FormLyoute/FormContaReceber.ui -o FormCode/FormContaReceber.py
+
+
+
+#Formcaixa
+pyuic5 FormLyoute/FormCaixa.ui -o FormCode/FormCaixa.py 
+#formBaixaREceber
+pyuic5 FormLyoute/FormBaixaReceber.ui -o FormCode/FormBaixaReceber.py
+
+#visualisar Pdf
+pyuic5 FormLyoute/ForMVisualisarPDf.ui -o FormCode/ForMVisualisarPDf.py 
+
+#conTrolio funcionario
+pyuic5 FormLyoute/FormConTroleioFuncionario.ui -o FormCode/FormConTroleioFuncionario.py 
+
+#incluir funcionario
+pyuic5 FormLyoute/FormIncluirFuncionario.ui -o FormCode/FormIncluirFuncionario.py 
+
+#cadastroUsuario/liberador
+pyuic5 FormLyoute/FormControleioCadastroUsuario.ui -o FormCode/FormControleioCadastroUsuario.py 
+
+#entrada de nota
+pyuic5 FormLyoute/FormEntradaDenota.ui -o FormCode/FormEntradaDenota.py 
+#visualisarnotas de entrada
+pyuic5 FormLyoute/FormVisualisarNotasEntrada.ui -o FormCode/FormVisualisarNotasEntrada.py 
+#editaitemnotafiscal
+pyuic5 FormLyoute/FormEditItemNotaFiscal.ui -o FormCode/FormEditItemNotaFiscal.py 
+auto-py-to-exe #importa sistema exe
+
+#ConstaApagar
+pyuic5 FormLyoute/FormContaApagar.ui -o FormCode/FormContaApagar.py 
+
+#incluirApagar
+
+pyuic5 FormLyoute/FormIncluirApagar.ui -o FormCode/FormIncluirApagar.py 
+#analise venda
+pyuic5 FormLyoute/FormAnaliseDevenda.ui -o FormCode/FormAnaliseDevenda.py 
+
+#CadastroTributos
+pyuic5 FormLyoute/FormCadastroTributos.ui -o FormCode/FormCadastroTributos.py 
+
+#FormMessagemWidget
+pyuic5 FormLyoute/FormMessagemWidget.ui -o FormCode/FormMessagemWidget.py 
+
+#BUSCAR PRODUTOS
+pyuic5 FormLyoute/FormBuscarProduto.ui -o FormCode/FormBuscarProduto.py 
