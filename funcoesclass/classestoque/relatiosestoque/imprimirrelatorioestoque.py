@@ -66,7 +66,7 @@ class relatorioitem:
         pdf.ln()
 
         # Salvando o PDF
-        pdf.image("ajuda.png",180,  2, 20)
+        #pdf.image("ajuda.png",180,  2, 20)
         pdf.output('config/relatorioestoque/relatorioestoque.pdf', 'F')
 
         QApplication.processEvents()  

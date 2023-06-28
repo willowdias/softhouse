@@ -463,8 +463,8 @@ class telaincial(QMainWindow):
                     widget.deleteLater()
                     self.ui.tabWidget.removeTab(index)
                 
-   
-    def VerificarEAbriPAginaTab(self,item):
+    #@QtCore.pyqtSlot(str)
+    def VerificarEAbriPAginaTab(self):
 
         clickedButton = self.sender()
         selecionar = str(clickedButton.text()).lower()

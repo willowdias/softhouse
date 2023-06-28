@@ -1,0 +1,11 @@
+pyqt5-tools
+pyqt6-tools
+PyQt5
+fpdf
+PyQtWebEngine
+canvas
+reportlab
+mindsdb
+webdriver-manager
+python-barcode
+python-barcode

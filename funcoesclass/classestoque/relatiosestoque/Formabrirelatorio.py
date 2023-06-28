@@ -15,8 +15,9 @@ class relatorioestoque(QDialog):#essa tela puxa sistema sintegra
         self.showMaximized()
         self.setWindowFlags(Qt.Drawer|Qt.WindowStaysOnTopHint)
 
-        
         filename=f'{os.getcwd()}/config/relatorioestoque/{nomepdf}.pdf'
+        self.ui.web_browser.page().profile().setHttpUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.129 Safari/537.36")
+
         settings =self.ui.web_browser.settings()
         settings.setAttribute(QtWebEngineWidgets.QWebEngineSettings.PluginsEnabled, True)
         url = QtCore.QUrl.fromLocalFile(filename)
